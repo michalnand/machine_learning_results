@@ -7,7 +7,7 @@
 	],
 	"hyperparameters" : 
 	{
-		"dropout" : 0.30000001192092896,
+		"dropout" : 0.0,
 		"init_weight_range" : 0.0099999997764825821,
 		"learning_rate" : 9.9999997473787516e-05
 	},
