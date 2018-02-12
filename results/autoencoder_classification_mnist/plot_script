@@ -13,21 +13,23 @@ set grid xtics lt 0.1 lw 0.1 lc rgb "#bbbbbb"
 set terminal png size 1024,768 enhanced font "Helvetica,20"
 
 
-set xlabel "iteration"
+set xlabel "iteration x 1000"
 set ylabel "scuccess rate [%]"
 
 set yrange [*:*]
 
 
 set output 'learning_progress_rate.png'
-plot 'networks/net_0_result/progress.log' using ($1/1000):2 title "unsupervised epoch count 0" with lines lw 2.0, \
-     'networks/net_1_result/progress.log' using ($1/1000):2 title "unsupervised epoch count 10" with lines lw 2.0, \
-     'networks/net_3_result/progress.log' using ($1/1000):2 title "unsupervised epoch count 50" with lines lw 2.0, \
-     'networks/net_4_result/progress.log' using ($1/1000):2 title "unsupervised epoch count 100" with lines lw 2.0
+plot 'net_0_result/progress.log' using ($1/1000):2 title "FNN [256 64 10]" with lines lw 2.0, \
+     'net_2_result/progress.log' using ($1/1000):2 title "FNN [256 64 40 10]" with lines lw 2.0, \
+     'net_4_result/progress.log' using ($1/1000):2 title "FNN [256 64 40 50 10]" with lines lw 2.0, \
+     'net_1_result/progress.log' using ($1/1000):2 title "AE [256 64] + FNN [10]" with lines lw 2.0, \
+     'net_5_result/progress.log' using ($1/1000):2 title "AE [256 64 40] + FNN [50 10]" with lines lw 2.0
 
 
 set output 'learning_progress_rate_detail.png'
-plot 'networks/net_0_result/progress.log' using ($1/1000):2 every ::20 title "unsupervised epoch count 0" with lines lw 2.0, \
-     'networks/net_1_result/progress.log' using ($1/1000):2 every ::20 title "unsupervised epoch count 10" with lines lw 2.0, \
-     'networks/net_3_result/progress.log' using ($1/1000):2 every ::20 title "unsupervised epoch count 50" with lines lw 2.0, \
-     'networks/net_4_result/progress.log' using ($1/1000):2 every ::20 title "unsupervised epoch count 100" with lines lw 2.0
+plot 'net_0_result/progress.log' using ($1/1000):2  every ::20 title "FNN [256 64 10]" with lines lw 2.0, \
+     'net_2_result/progress.log' using ($1/1000):2  every ::20 title "FNN [256 64 40 10]" with lines lw 2.0, \
+     'net_4_result/progress.log' using ($1/1000):2  every ::20 title "FNN [256 64 40 50 10]" with lines lw 2.0, \
+     'net_1_result/progress.log' using ($1/1000):2  every ::20 title "AE [256 64] + FNN [10]" with lines lw 2.0, \
+     'net_5_result/progress.log' using ($1/1000):2  every ::20 title "AE [256 64 40] + FNN [50 10]" with lines lw 2.0
