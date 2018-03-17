@@ -157,7 +157,8 @@ divergencií váh. Úmerne tomu boli upravené počty iterácií učenia.
 Veľkosť batch bol zvolený na 1000 po sebe idúcich stavov. Každý batch mal pri tréningu
 10 behov (epoch). Parameter SARSA algoritmu $\gamma$ bol zvolený $0.8$,
 parameter $\alpha$ je pri použití neurónovej siete ukrytý v learning rate parametry siete.
-Zvolená bola $\epsilon$ greedy stratégia voľby akcií.
+Zvolená bola $\epsilon$ greedy stratégia voľby akcií. Voľba horšej akcie bola počas tréningu
+0.1, počas testovania 0.0 - vyberala sa len najlepšia akcia.
 \\
 Siete boli učené algoritmom backpropagation. Riedkosť váh sa dosahovala pomocou L1 normy.
 Gradientová metóda učenia váh potom prejde na vzťah
@@ -205,6 +206,19 @@ a dosiahol sa štatický vierohodný výsledok.
 
 \subsection{Riedkosť váh}
 
+Počas tréningu sa postupne váhy ustália na potrebné hodnoty. Pomocou histogramov
+je možné overiť riedkosť váh, v závislosti od parametra $\lambda$.
+Pre prehľadnosť sú znázornené len vlastnosti váh pre prvú vrstvu siete.
+Histogramy na obrázkoch \ref{img:FNN sparse weights histogram} a \ref{img:FNN no sparse weights histogram}
+porovnávajú početnosti váh pre doprednú sieť. Pre riedku sieť je 16\% váh nulových,
+pre neriedku 1.67\%.
+Podobné výsledky sú pre kombináciu autoenkódera a doprednej siete -
+obrázky \ref{img:AE+FNN sparse weights histogram} a \ref{img:AE+FNN no sparse weights histogram}
+S percentuálnym zastúpením 17.7\% pre riedke váhy a 3.3\% pre neriedke váhy.
+Ilustračne ešte uvádzame cahrakter riedkych váh pre každý zo 64 neurónov, usporiadaných
+do matice 5x19 - tak aby zodpovedali vizuálnej interpretácií prostredia. Obrázky
+\ref{img:FNN sparse weights visualisation}, \ref{img:AE+FNN sparse weights visualisation}.
+
 
 \begin{figure}[!htb]
 \centering
@@ -212,11 +226,13 @@ a dosiahol sa štatický vierohodný výsledok.
   \centering
   \includegraphics[scale=0.32]{../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png}
   \captionof{figure}{FNN sparse weights histogram}
+  \label{img:FNN sparse weights histogram}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.32]{../../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png}
   \captionof{figure}{FNN no sparse weights histogram}
+  \label{img:FNN no sparse weights histogram}
 \end{minipage}
 \end{figure}
 
@@ -226,11 +242,13 @@ a dosiahol sa štatický vierohodný výsledok.
   \centering
   \includegraphics[scale=0.32]{../../results/rl_arcade/hnn_trained_0/supervised/layer_1_histogram.png}
   \captionof{figure}{AE+FNN sparse weights histogram}
+  \label{img:AE+FNN sparse weights histogram}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.32]{../../results/rl_arcade/hnn_trained_5/supervised/layer_1_histogram.png}
   \captionof{figure}{AE+FNN no sparse weights histogram}
+  \label{img:AE+FNN no sparse weights histogram}
 \end{minipage}
 \end{figure}
 
@@ -242,11 +260,13 @@ a dosiahol sa štatický vierohodný výsledok.
   \centering
   \includegraphics[scale=0.4]{../../diagrams/layer_1_fnn_sparse.png}
   \captionof{figure}{FNN sparse weights visualisation}
+  \label{img:FNN sparse weights visualisation}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.4]{../../diagrams/layer_1_hnn_sparse.png}
   \captionof{figure}{AE+FNN sparse weights visualisation}
+  \label{img:AE+FNN sparse weights visualisation}
 \end{minipage}
 \end{figure}
 
@@ -254,12 +274,16 @@ a dosiahol sa štatický vierohodný výsledok.
 
 \subsection{Dosiahnuté skóre}
 
+{\bf TODO : viac to rozpisat}
+
 Po 200 000 supervised učiacich iteráciach sa spustilo 50 000 testovacích iterácií.
+Zhrnuté dosiahnuté skóre je uvedené v tabuľke \ref{tab:summary_results}.
+
 
 \begin{table}[]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Summary results}
+\label{tab:summary_results}
 \begin{tabular}{|l|c|c|c|c|}
 \hline
                          & \multicolumn{1}{l|}{average score} & \multicolumn{1}{l|}{best score} & \multicolumn{1}{l|}{worst score} & \multicolumn{1}{l|}{average best action probability {[}\%{]}} \\ \hline
@@ -270,19 +294,35 @@ AE+FNN no sparse weights & 908.58                             & 954.31          
 \end{tabular}
 \end{table}
 
-\begin{figure}[!h]
+Testovanie hypotézy o rýchlosti učenia zobrazujú grafy na obrázkoch
+\ref{img:FNN progress comparison}, \ref{img:AE+FNN progress comparison}, \ref{img:Training progress comparison}.
+
+Z grafu obrázka \ref{img:Training progress comparison} je zrejmé, že predtrénovaná
+sieť sa učí rýchlejšie. Po čase podľa očakávania, obe siete dosiahnú rovnaký výsledok.
+Hypotéza sa teda potvrdila. Pre prehľadnosť, sú v grafe znázornené len 4 vybrané siete.
+Táto redukcia je možná vďaka malým rozptylom hodnôt všetkých testovaných sieti - priebehy
+pre všetkých 10 sieti (5 riedkych a 5 neriedkych) je možné vidieť na obrázkoch \ref{img:FNN progress comparison} pre doprednú sieť
+a \ref{img:AE+FNN progress comparison} pre predtrénovanú sieť.
+Rovnako nie je viditeľný kvalitatívny rozdiel medzi riedkymi a neriedkými váhami - optimalizáciou
+harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.4]{../../results/rl_arcade/fnn_progress/training_progress.png}
-  \caption{FNN progress comparison}
+  \includegraphics[scale=0.3]{../../results/rl_arcade/fnn_progress/training_progress.png}
+  \captionof{figure}{FNN progress comparison}
   \label{img:FNN progress comparison}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{../../results/rl_arcade/hnn_progress/training_progress.png}
+  \captionof{figure}{AE+FNN progress comparison}
+  \label{img:AE+FNN progress comparison}
+\end{minipage}
 \end{figure}
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[scale=0.4]{../../results/rl_arcade/hnn_progress/training_progress.png}
-  \caption{AE+FNN progress comparison}
-  \label{img:AE+FNN progress comparison}
-\end{figure}
+
 
 \begin{figure}[!h]
   \centering

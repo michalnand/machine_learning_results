@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  17 MAR 2018 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  17 MAR 2018 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1060,28 +1060,27 @@ File: ../../diagrams/hnn.png Graphic file (type png)
 <use ../../diagrams/hnn.png>
 Package pdftex.def Info: ../../diagrams/hnn.png used on input line 145.
 (pdftex.def)             Requested size: 375.36372pt x 183.85162pt.
-
-<../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png, id=24,
+ [3 <../../diagrams/hnn.png (PNG copy)>]
+<../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png, id=27,
  770.88pt x 578.16pt>
 File: ../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png Gr
 aphic file (type png)
 
 <use ../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png>
 Package pdftex.def Info: ../../results/rl_arcade/fnn_trained_0/supervised/layer
-_1_histogram.png used on input line 212.
+_1_histogram.png used on input line 227.
 (pdftex.def)             Requested size: 246.68665pt x 185.01497pt.
 
-<../../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png, id=25,
+<../../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png, id=28,
  770.88pt x 578.16pt>
 File: ../../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png Gr
 aphic file (type png)
 
 <use ../../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png>
 Package pdftex.def Info: ../../results/rl_arcade/fnn_trained_5/supervised/layer
-_1_histogram.png used on input line 217.
+_1_histogram.png used on input line 233.
 (pdftex.def)             Requested size: 246.68665pt x 185.01497pt.
 
-[3 <../../diagrams/hnn.png (PNG copy)>]
 <../../results/rl_arcade/hnn_trained_0/supervised/layer_1_histogram.png, id=29,
  770.88pt x 578.16pt>
 File: ../../results/rl_arcade/hnn_trained_0/supervised/layer_1_histogram.png Gr
@@ -1089,7 +1088,7 @@ aphic file (type png)
 
 <use ../../results/rl_arcade/hnn_trained_0/supervised/layer_1_histogram.png>
 Package pdftex.def Info: ../../results/rl_arcade/hnn_trained_0/supervised/layer
-_1_histogram.png used on input line 226.
+_1_histogram.png used on input line 243.
 (pdftex.def)             Requested size: 246.68665pt x 185.01497pt.
 
 <../../results/rl_arcade/hnn_trained_5/supervised/layer_1_histogram.png, id=30,
@@ -1099,7 +1098,7 @@ aphic file (type png)
 
 <use ../../results/rl_arcade/hnn_trained_5/supervised/layer_1_histogram.png>
 Package pdftex.def Info: ../../results/rl_arcade/hnn_trained_5/supervised/layer
-_1_histogram.png used on input line 231.
+_1_histogram.png used on input line 249.
 (pdftex.def)             Requested size: 246.68665pt x 185.01497pt.
 
 <../../diagrams/layer_1_fnn_sparse.png, id=31, 501.875pt x 171.64125pt>
@@ -1107,7 +1106,7 @@ File: ../../diagrams/layer_1_fnn_sparse.png Graphic file (type png)
 
 <use ../../diagrams/layer_1_fnn_sparse.png>
 Package pdftex.def Info: ../../diagrams/layer_1_fnn_sparse.png used on input li
-ne 242.
+ne 261.
 (pdftex.def)             Requested size: 200.74643pt x 68.65527pt.
 
 <../../diagrams/layer_1_hnn_sparse.png, id=32, 501.875pt x 171.64125pt>
@@ -1115,112 +1114,102 @@ File: ../../diagrams/layer_1_hnn_sparse.png Graphic file (type png)
 
 <use ../../diagrams/layer_1_hnn_sparse.png>
 Package pdftex.def Info: ../../diagrams/layer_1_hnn_sparse.png used on input li
-ne 247.
+ne 267.
 (pdftex.def)             Requested size: 200.74643pt x 68.65527pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 257.
-
-
-<../../results/rl_arcade/fnn_progress/training_progress.png, id=33, 770.88pt x 
-578.16pt>
-File: ../../results/rl_arcade/fnn_progress/training_progress.png Graphic file (
-type png)
- <use ../../results/rl_arcade/fnn_progress/training_progress.png>
-Package pdftex.def Info: ../../results/rl_arcade/fnn_progress/training_progress
-.png used on input line 273.
-(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<../../results/rl_arcade/hnn_progress/training_progress.png, id=34, 770.88pt x 
-578.16pt>
-File: ../../results/rl_arcade/hnn_progress/training_progress.png Graphic file (
-type png)
- <use ../../results/rl_arcade/hnn_progress/training_progress.png>
-Package pdftex.def Info: ../../results/rl_arcade/hnn_progress/training_progress
-.png used on input line 280.
-(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../../results/rl_arcade/training_progress.png, id=35, 770.88pt x 578.16pt>
-File: ../../results/rl_arcade/training_progress.png Graphic file (type png)
-
-<use ../../results/rl_arcade/training_progress.png>
-Package pdftex.def Info: ../../results/rl_arcade/training_progress.png used on 
-input line 287.
-(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../../results/rl_arcade/testing_progress.png, id=36, 770.88pt x 578.16pt>
-File: ../../results/rl_arcade/testing_progress.png Graphic file (type png)
-
-<use ../../results/rl_arcade/testing_progress.png>
-Package pdftex.def Info: ../../results/rl_arcade/testing_progress.png used on i
-nput line 295.
-(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+               Default added (so using `tbp') on input line 283.
 
 [4 <../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png> <..
 /../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png> <../../re
 sults/rl_arcade/hnn_trained_0/supervised/layer_1_histogram.png> <../../results/
 rl_arcade/hnn_trained_5/supervised/layer_1_histogram.png> <../../diagrams/layer
 _1_fnn_sparse.png (PNG copy)> <../../diagrams/layer_1_hnn_sparse.png (PNG copy)
->] [5 <../../results/rl_arcade/fnn_progress/training_progress.png> <../../resul
-ts/rl_arcade/hnn_progress/training_progress.png>]
+>]
+<../../results/rl_arcade/fnn_progress/training_progress.png, id=40, 770.88pt x 
+578.16pt>
+File: ../../results/rl_arcade/fnn_progress/training_progress.png Graphic file (
+type png)
+ <use ../../results/rl_arcade/fnn_progress/training_progress.png>
+Package pdftex.def Info: ../../results/rl_arcade/fnn_progress/training_progress
+.png used on input line 313.
+(pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
+
+<../../results/rl_arcade/hnn_progress/training_progress.png, id=41, 770.88pt x 
+578.16pt>
+File: ../../results/rl_arcade/hnn_progress/training_progress.png Graphic file (
+type png)
+ <use ../../results/rl_arcade/hnn_progress/training_progress.png>
+Package pdftex.def Info: ../../results/rl_arcade/hnn_progress/training_progress
+.png used on input line 319.
+(pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
+
+<../../results/rl_arcade/training_progress.png, id=42, 770.88pt x 578.16pt>
+File: ../../results/rl_arcade/training_progress.png Graphic file (type png)
+
+<use ../../results/rl_arcade/training_progress.png>
+Package pdftex.def Info: ../../results/rl_arcade/training_progress.png used on 
+input line 329.
+(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
+
+<../../results/rl_arcade/testing_progress.png, id=43, 770.88pt x 578.16pt>
+File: ../../results/rl_arcade/testing_progress.png Graphic file (type png)
+
+<use ../../results/rl_arcade/testing_progress.png>
+Package pdftex.def Info: ../../results/rl_arcade/testing_progress.png used on i
+nput line 337.
+(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <../../results/rl_arcade/fnn_progress/training_progress.png> <../../results/
+rl_arcade/hnn_progress/training_progress.png> <../../results/rl_arcade/training
+_progress.png>] [6 <../../results/rl_arcade/testing_progress.png>]
 No file paper.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
 []\T1/ptm/m/n/10 M.J.Flynn, P.Kanerva, and N.Bhadkamkar, 1989, Sparse Dis-tri-b
 u-ted Me-mory: Prin-cip-les and Ope-ra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 []\T1/ptm/m/n/10 David Ro-gers, 1988, NASA, KA-NERVA'S SPARSE DIS-TRI-BU-TED ME
 -MORY: AN AS-SO-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 \T1/ptm/m/n/10 CIA-TIVE ME-MORY AL-GO-RITHM WELL SU-ITED TO THE CON-NEC-TION MA
 -CHINE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
 []\T1/ptm/m/n/10 J. S. Al-bus, 1975, Data Sto-rage in Ce-re-bel-lar Mo-del Ar-t
 i-cu-la-tion Con-trol-ler
  []
 
-[6 <../../results/rl_arcade/training_progress.png> <../../results/rl_arcade/tes
-ting_progress.png>] [7] (./paper.aux) ) 
+[7] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 16456 strings out of 493029
- 306551 string characters out of 6136234
- 369880 words of memory out of 5000000
- 19638 multiletter control sequences out of 15000+600000
+ 16462 strings out of 493029
+ 306789 string characters out of 6136234
+ 369928 words of memory out of 5000000
+ 19644 multiletter control sequences out of 15000+600000
  37132 words of font info for 60 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 55i,9n,54p,807b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc
-/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (7 pages, 634976 bytes).
+ 55i,9n,54p,807b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb>
+Output written on paper.pdf (7 pages, 647382 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
