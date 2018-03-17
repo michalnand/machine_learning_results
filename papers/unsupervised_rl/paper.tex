@@ -157,6 +157,7 @@ divergencií váh. Úmerne tomu boli upravené počty iterácií učenia.
 Veľkosť batch bol zvolený na 1000 po sebe idúcich stavov. Každý batch mal pri tréningu
 10 behov (epoch). Parameter SARSA algoritmu $\gamma$ bol zvolený $0.8$,
 parameter $\alpha$ je pri použití neurónovej siete ukrytý v learning rate parametry siete.
+Zvolená bola $\epsilon$ greedy stratégia voľby akcií.
 \\
 Siete boli učené algoritmom backpropagation. Riedkosť váh sa dosahovala pomocou L1 normy.
 Gradientová metóda učenia váh potom prejde na vzťah
@@ -253,6 +254,7 @@ a dosiahol sa štatický vierohodný výsledok.
 
 \subsection{Dosiahnuté skóre}
 
+Po 200 000 supervised učiacich iteráciach sa spustilo 50 000 testovacích iterácií.
 
 \begin{table}[]
 \centering
