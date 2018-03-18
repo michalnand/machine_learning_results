@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  18 MAR 2018 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  18 MAR 2018 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1167,100 +1167,101 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5 <../../results/rl_arcade/fnn_progress/training_progress.png> <../../results/
 rl_arcade/hnn_progress/training_progress.png> <../../results/rl_arcade/training
 _progress.png>]
-
-LaTeX Warning: Reference `img:snake schem' on page 6 undefined on input line 35
-2.
-
 <../../diagrams/worms_rl_game_desc.png, id=50, 599.1183pt x 632.72385pt>
 File: ../../diagrams/worms_rl_game_desc.png Graphic file (type png)
 
 <use ../../diagrams/worms_rl_game_desc.png>
 Package pdftex.def Info: ../../diagrams/worms_rl_game_desc.png used on input li
-ne 356.
-(pdftex.def)             Requested size: 239.64307pt x 253.08505pt.
+ne 361.
+(pdftex.def)             Requested size: 179.73688pt x 189.8186pt.
 
-<../../results/rl_worms/fnn_progress/training_progress.png, id=51, 770.88pt x 5
+<../../diagrams/snake_bot_schem.png, id=51, 153.6942pt x 303.0522pt>
+File: ../../diagrams/snake_bot_schem.png Graphic file (type png)
+
+<use ../../diagrams/snake_bot_schem.png>
+Package pdftex.def Info: ../../diagrams/snake_bot_schem.png used on input line 
+367.
+(pdftex.def)             Requested size: 76.8469pt x 151.52573pt.
+
+<../../results/rl_worms/fnn_progress/training_progress.png, id=52, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/fnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/fnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/fnn_progress/training_progress.
-png used on input line 366.
+png used on input line 383.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
-<../../results/rl_worms/hnn_progress/training_progress.png, id=52, 770.88pt x 5
+<../../results/rl_worms/hnn_progress/training_progress.png, id=53, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/hnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/hnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/hnn_progress/training_progress.
-png used on input line 372.
+png used on input line 389.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
-<../../results/rl_worms/training_progress.png, id=53, 770.88pt x 578.16pt>
+<../../results/rl_worms/training_progress.png, id=54, 770.88pt x 578.16pt>
 File: ../../results/rl_worms/training_progress.png Graphic file (type png)
 
 <use ../../results/rl_worms/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/training_progress.png used on i
-nput line 381.
+nput line 398.
 (pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <../../results/rl_arcade/testing_progress.png> <../../diagrams/worms_rl_game
-_desc.png>] [7 <../../results/rl_worms/fnn_progress/training_progress.png> <../
-../results/rl_worms/hnn_progress/training_progress.png> <../../results/rl_worms
-/training_progress.png>]
+_desc.png> <../../diagrams/snake_bot_schem.png (PNG copy)>] [7 <../../results/r
+l_worms/fnn_progress/training_progress.png> <../../results/rl_worms/hnn_progres
+s/training_progress.png> <../../results/rl_worms/training_progress.png>]
 No file paper.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
 []\T1/ptm/m/n/10 M.J.Flynn, P.Kanerva, and N.Bhadkamkar, 1989, Sparse Dis-tri-b
 u-ted Me-mory: Prin-cip-les and Ope-ra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 []\T1/ptm/m/n/10 David Ro-gers, 1988, NASA, KA-NERVA'S SPARSE DIS-TRI-BU-TED ME
 -MORY: AN AS-SO-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 \T1/ptm/m/n/10 CIA-TIVE ME-MORY AL-GO-RITHM WELL SU-ITED TO THE CON-NEC-TION MA
 -CHINE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
 []\T1/ptm/m/n/10 J. S. Al-bus, 1975, Data Sto-rage in Ce-re-bel-lar Mo-del Ar-t
 i-cu-la-tion Con-trol-ler
  []
 
-[8] (./paper.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[8] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 16487 strings out of 493029
- 307953 string characters out of 6136234
- 369964 words of memory out of 5000000
- 19665 multiletter control sequences out of 15000+600000
+ 16492 strings out of 493029
+ 308132 string characters out of 6136234
+ 369973 words of memory out of 5000000
+ 19669 multiletter control sequences out of 15000+600000
  37132 words of font info for 60 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  55i,9n,54p,807b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (8 pages, 891041 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb>
+Output written on paper.pdf (8 pages, 909953 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

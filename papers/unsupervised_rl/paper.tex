@@ -342,21 +342,38 @@ harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
 \newpage
 \section{Aditional experiment - snake}
 
-Pozitývne výsledky uvedeného experimentu nás viedli urobiť ešte jeden, doplnkový experiment.
+Pozitívne výsledky uvedeného experimentu nás viedli urobiť ešte jeden, doplnkový experiment.
 Použili sme klasickú hru had - agent má za úlohu zbierať jedlo, obrázok \ref{img:Testing snake game}.
 Za každé zjedenie je odmena $+0.1$, za vypadnutie z mapy $-1.0$. Agent - had, má na
 hlave 32 senzorov, ktoré ho informujú o vzdialenosti k jedlu. Senzory sú rozmiestnené
 v polkruhu, tak aby rovnomerne pokrývali zorné pole.
 Agent má na výber tri akcie - vpred, vľavo, vpravo. Had je modelovaný ako diferenciálny
 podvozok {\bf TODO citovat} so zotrvačnosťou. Uvedené akcie teda generujú dve sily, ktoré
-menia polomer zatáčania, tak ako je uvedené na obrázku \ref{img:snake schem} {\bf TODO obrazok had senzory + sily}.
+menia polomer zatáčania, tak ako je uvedené na obrázku \ref{img:Agent schematics}.
+Kolízie neboli v experimente použité.
 
-\begin{figure}[!h]
+
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.4]{../../diagrams/worms_rl_game_desc.png}
-  \caption{Testing snake game}
+  \includegraphics[scale=0.3]{../../diagrams/worms_rl_game_desc.png}
+  \captionof{figure}{Testing snake game}
   \label{img:Testing snake game}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.5]{../../diagrams/snake_bot_schem.png}
+  \captionof{figure}{Agent schematics}
+  \label{img:Agent schematics}
+\end{minipage}
 \end{figure}
+
+
+
+
+
 
 
 \begin{figure}[!htb]
