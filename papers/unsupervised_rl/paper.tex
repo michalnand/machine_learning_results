@@ -340,7 +340,55 @@ harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
 \end{figure}
 
 \newpage
+\section{Aditional experiment - snake}
+
+Pozitývne výsledky uvedeného experimentu nás viedli urobiť ešte jeden, doplnkový experiment.
+Použili sme klasickú hru had - agent má za úlohu zbierať jedlo, obrázok \ref{img:Testing snake game}.
+Za každé zjedenie je odmena $+0.1$, za vypadnutie z mapy $-1.0$. Agent - had, má na
+hlave 32 senzorov, ktoré ho informujú o vzdialenosti k jedlu. Senzory sú rozmiestnené
+v polkruhu, tak aby rovnomerne pokrývali zorné pole.
+Agent má na výber tri akcie - vpred, vľavo, vpravo. Had je modelovaný ako diferenciálny
+podvozok {\bf TODO citovat} so zotrvačnosťou. Uvedené akcie teda generujú dve sily, ktoré
+menia polomer zatáčania, tak ako je uvedené na obrázku \ref{img:snake schem} {\bf TODO obrazok had senzory + sily}.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.4]{../../diagrams/worms_rl_game_desc.png}
+  \caption{Testing snake game}
+  \label{img:Testing snake game}
+\end{figure}
+
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{../../results/rl_worms/fnn_progress/training_progress.png}
+  \captionof{figure}{FNN score progress comparison}
+  \label{img:worms FNN score progress comparison}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{../../results/rl_worms/hnn_progress/training_progress.png}
+  \captionof{figure}{AE+FNN score progress comparison}
+  \label{img:worms AE+FNN score progress comparison}
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.4]{../../results/rl_worms/training_progress.png}
+  \caption{Training worms score progress}
+  \label{img:Training worms score progress}
+\end{figure}
+
+\newpage
 \section{Conclusion}
+
+Simulačný nástroj bol napísaný v C++, neurónové siete sú počítané pomocou NVIDIA Cuda
+technológie. Je možné voliť medzi počítaním na CPU a GPU - výsledné zlepšenie závisí
+od veľkosti siete. Beh experimentov bol asi 60 minút. 
 
 \newpage
 \bibliographystyle{IEEEtran}

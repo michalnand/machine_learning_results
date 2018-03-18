@@ -1,0 +1,34 @@
+set   autoscale                        # scale axes automatically
+unset log                              # remove any log-scaling
+unset label                            # remove any previous labels
+set xtic auto                         	# set xtics automatically
+set ytic auto                         # set ytics automatically
+set ztic auto
+
+set key left top
+
+set grid ytics lt 0.1 lw 0.1 lc rgb "#bbbbbb"
+set grid xtics lt 0.1 lw 0.1 lc rgb "#bbbbbb"
+
+set terminal png size 1024,768 enhanced font "Helvetica,20"
+
+set xlabel "iteration x 1000"
+set ylabel "score"
+
+set yrange [-100:600]
+
+set xtic 20
+
+set title "FNN [32, 8, 3]"
+
+set output 'training_progress.png'
+plot  'training_0.log' using 1 every ::::200 title "sparse weights" with lines lw 2.0 linecolor "red", \
+      'training_1.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "red", \
+      'training_2.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "red", \
+      'training_3.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "red", \
+      'training_4.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "red", \
+      'training_5.log' using 1 every ::::200 title "no sparse weights" with lines lw 2.0 linecolor "blue", \
+      'training_6.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "blue", \
+      'training_7.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "blue", \
+      'training_8.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "blue", \
+      'training_9.log' using 1 every ::::200 notitle with lines lw 2.0 linecolor "blue"
