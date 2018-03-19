@@ -273,11 +273,9 @@ do matice 5x19 - tak aby zodpovedali vizuálnej interpretácií prostredia. Obr�
 
 
 \subsection{Dosiahnuté skóre}
-
-{\bf TODO : viac to rozpisat}
-
-Po 200 000 supervised učiacich iteráciach sa spustilo 50 000 testovacích iterácií.
-Zhrnuté dosiahnuté skóre je uvedené v tabuľke \ref{tab:summary_results}.
+Siet s autoenkóderom sa najpr predtrénovala 100 000 iteráciami. Následne sa spustil
+supervised tréning. Po 200 000 supervised učiacich iteráciach sa spustilo 50 000 testovacích iterácií.
+Zhrnuté dosiahnuté skóre na konci testovacích iteráciach je uvedené v tabuľke \ref{tab:summary_results}.
 
 
 \begin{table}[]
@@ -296,15 +294,22 @@ AE+FNN no sparse weights & 908.58                             & 954.31          
 
 Testovanie hypotézy o rýchlosti učenia zobrazujú grafy na obrázkoch
 \ref{img:FNN progress comparison}, \ref{img:AE+FNN progress comparison}, \ref{img:Training progress comparison}.
+Grafy zobrazujú priebehy pre všetkých 10 sieti (5 riedkych a 5 neriedkych).
+Graf na obrázku \ref{img:FNN progress comparison} je pre jednoduchú doprednú sieť,
+a graf na obrázku \ref{img:AE+FNN progress comparison} pre kombinvané riešenie s predtrénovaním.
 
-Z grafu obrázka \ref{img:Training progress comparison} je zrejmé, že predtrénovaná
-sieť sa učí rýchlejšie. Po čase podľa očakávania, obe siete dosiahnú rovnaký výsledok.
-Hypotéza sa teda potvrdila. Pre prehľadnosť, sú v grafe znázornené len 4 vybrané siete.
-Táto redukcia je možná vďaka malým rozptylom hodnôt všetkých testovaných sieti - priebehy
-pre všetkých 10 sieti (5 riedkych a 5 neriedkych) je možné vidieť na obrázkoch \ref{img:FNN progress comparison} pre doprednú sieť
-a \ref{img:AE+FNN progress comparison} pre predtrénovanú sieť.
+Pre prehľadnosť sme z každého grafu vybrali 2 siete a vykreslili ich do spoločného grafu,
+na obrázku \ref{img:Training progress comparison} - tento výber je možné urobiť, pretože rozptyly výsledkov sú
+veľmi malé. Z grafu obrázka \ref{img:Training progress comparison} je zrejmé, že predtrénovaná
+sieť sa učí rýchlejšie - voľbu správnej akcie dosiahne rýchlejšie.
+Po čase podľa očakávania, obe siete dosiahnú rovnaký výsledok. Hypotéza sa teda potvrdila.
+
 Rovnako nie je viditeľný kvalitatívny rozdiel medzi riedkymi a neriedkými váhami - optimalizáciou
 harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
+Pre úplnosť dodávame dosiahnuté skóre počas testovania, obrázky
+\ref{img:FNN score} a \ref{img:AE+FNN score}.
+Po dostatočnom počte trénovacích iterácií sa teda všetky uvedené riešenia správajú veľmi
+podobne.
 
 \begin{figure}[!htb]
 \centering
@@ -324,6 +329,28 @@ harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
 
 
 
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{../../results/rl_arcade/fnn_progress/testing_score.png}
+  \captionof{figure}{FNN score}
+  \label{img:FNN score}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{../../results/rl_arcade/hnn_progress/testing_score.png}
+  \captionof{figure}{AE+FNN score}
+  \label{img:AE+FNN score}
+\end{minipage}
+\end{figure}
+
+
+
+
+
+
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.4]{../../results/rl_arcade/training_progress.png}
@@ -332,12 +359,6 @@ harvéru na riedke výpočty by tak mohlo byť výrazne urýchlene.
 \end{figure}
 
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[scale=0.4]{../../results/rl_arcade/testing_progress.png}
-  \caption{Testing progress comparison}
-  \label{img:Testing progress comparison}
-\end{figure}
 
 \newpage
 \section{Aditional experiment - snake}
@@ -352,6 +373,13 @@ podvozok {\bf TODO citovat} so zotrvačnosťou. Uvedené akcie teda generujú dv
 menia polomer zatáčania, tak ako je uvedené na obrázku \ref{img:Agent schematics}.
 Kolízie neboli v experimente použité.
 
+Hyperparametre siete boli rovnaké ako v predošlom experimente.
+Parametre agenta bolo nutné upraviť, pravdepodobnosť voľby horšej akcie $\epsilon = 0.3$,
+veľkosť batch 100 krokov, a počet epoch batchu 10. S týmito parametrami sa bol agent schopný
+učiť a za pomerne krátky čas dosahoval kladné odmeny.
+Kedže úloha ma menej prvkový stavový vektor, zmenšili sme počty neurónov v sietiach.
+Topológia autoenkódera bola 32, 8, 32, 32 a topológia doprednej siete
+32 8 3 \footnote {pozri obrázky \ref{img:Supervised network architecture} a \ref{img:Unsupervised + Supervised network architecture}}.
 
 
 \begin{figure}[!htb]
@@ -365,16 +393,10 @@ Kolízie neboli v experimente použité.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.5]{../../diagrams/snake_bot_schem.png}
-  \captionof{figure}{Agent schematics}
+  \captionof{figure}{Agent schematics {\bf OBRAZOK je strasny}}
   \label{img:Agent schematics}
 \end{minipage}
 \end{figure}
-
-
-
-
-
-
 
 \begin{figure}[!htb]
 \centering
@@ -400,12 +422,26 @@ Kolízie neboli v experimente použité.
   \label{img:Training worms score progress for best networks}
 \end{figure}
 
+Skóre dosiahnuté počas tréningu je na obrázkoch
+\ref{img:worms FNN score progress comparison}, \ref{img:worms AE+FNN score progress comparison}
+a   \ref{img:Training worms score progress for best networks}.
+Vzhľadom na variabilitu výskytu odmien, sú ropztyly oveľa väčšie ako v predošlom experimente.
+Prekvapujúce je zistenie, že niektoré dopredné siete nedosiahli kladné skóre ani po 200 000
+trénovacií iteráciach. Naproti tomu, všetky predtrénované siete dosiahli kladné skóre,
+tri z nich prekonali jednoduché dopredné siete. Na obrázku \ref{img:Training worms score progress for best networks}
+sú znázornené najlepšie siete z oboch topológií pre porovnanie.
+Naša hypotéza sa teda aj tu potvrdila - pretrénovanie siete naozaj zvýšilo rýchlosť
+tréningu.
+
+
+
+
 \newpage
 \section{Conclusion}
 
 Simulačný nástroj bol napísaný v C++, neurónové siete sú počítané pomocou NVIDIA Cuda
 technológie. Je možné voliť medzi počítaním na CPU a GPU - výsledné zlepšenie závisí
-od veľkosti siete. Beh experimentov bol asi 60 minút.
+od veľkosti siete. Beh experimentov bol asi 120 minút.
 
 \newpage
 \bibliographystyle{IEEEtran}

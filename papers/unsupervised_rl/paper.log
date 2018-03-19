@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  18 MAR 2018 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  19 MAR 2018 08:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,7 +1119,7 @@ ne 267.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 283.
+               Default added (so using `tbp') on input line 281.
 
 [4 <../../results/rl_arcade/fnn_trained_0/supervised/layer_1_histogram.png> <..
 /../results/rl_arcade/fnn_trained_5/supervised/layer_1_histogram.png> <../../re
@@ -1133,7 +1133,7 @@ File: ../../results/rl_arcade/fnn_progress/training_progress.png Graphic file (
 type png)
  <use ../../results/rl_arcade/fnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_arcade/fnn_progress/training_progress
-.png used on input line 313.
+.png used on input line 318.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
 <../../results/rl_arcade/hnn_progress/training_progress.png, id=41, 770.88pt x 
@@ -1142,114 +1142,124 @@ File: ../../results/rl_arcade/hnn_progress/training_progress.png Graphic file (
 type png)
  <use ../../results/rl_arcade/hnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_arcade/hnn_progress/training_progress
-.png used on input line 319.
+.png used on input line 324.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
-<../../results/rl_arcade/training_progress.png, id=42, 770.88pt x 578.16pt>
+<../../results/rl_arcade/fnn_progress/testing_score.png, id=42, 770.88pt x 578.
+16pt>
+File: ../../results/rl_arcade/fnn_progress/testing_score.png Graphic file (type
+ png)
+ <use ../../results/rl_arcade/fnn_progress/testing_score.png>
+Package pdftex.def Info: ../../results/rl_arcade/fnn_progress/testing_score.png
+ used on input line 337.
+(pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
+
+<../../results/rl_arcade/hnn_progress/testing_score.png, id=43, 770.88pt x 578.
+16pt>
+File: ../../results/rl_arcade/hnn_progress/testing_score.png Graphic file (type
+ png)
+ <use ../../results/rl_arcade/hnn_progress/testing_score.png>
+Package pdftex.def Info: ../../results/rl_arcade/hnn_progress/testing_score.png
+ used on input line 343.
+(pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
+
+<../../results/rl_arcade/training_progress.png, id=44, 770.88pt x 578.16pt>
 File: ../../results/rl_arcade/training_progress.png Graphic file (type png)
 
 <use ../../results/rl_arcade/training_progress.png>
 Package pdftex.def Info: ../../results/rl_arcade/training_progress.png used on 
-input line 329.
-(pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
-
-<../../results/rl_arcade/testing_progress.png, id=43, 770.88pt x 578.16pt>
-File: ../../results/rl_arcade/testing_progress.png Graphic file (type png)
-
-<use ../../results/rl_arcade/testing_progress.png>
-Package pdftex.def Info: ../../results/rl_arcade/testing_progress.png used on i
-nput line 337.
+input line 356.
 (pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5 <../../results/rl_arcade/fnn_progress/training_progress.png> <../../results/
-rl_arcade/hnn_progress/training_progress.png> <../../results/rl_arcade/training
-_progress.png>]
-<../../diagrams/worms_rl_game_desc.png, id=50, 599.1183pt x 632.72385pt>
+rl_arcade/hnn_progress/training_progress.png> <../../results/rl_arcade/fnn_prog
+ress/testing_score.png> <../../results/rl_arcade/hnn_progress/testing_score.png
+>] <../../diagrams/worms_rl_game_desc.png, id=52, 599.1183pt x 632.72385pt>
 File: ../../diagrams/worms_rl_game_desc.png Graphic file (type png)
 
 <use ../../diagrams/worms_rl_game_desc.png>
 Package pdftex.def Info: ../../diagrams/worms_rl_game_desc.png used on input li
-ne 361.
+ne 389.
 (pdftex.def)             Requested size: 179.73688pt x 189.8186pt.
 
-<../../diagrams/snake_bot_schem.png, id=51, 153.6942pt x 303.0522pt>
+<../../diagrams/snake_bot_schem.png, id=53, 153.6942pt x 303.0522pt>
 File: ../../diagrams/snake_bot_schem.png Graphic file (type png)
 
 <use ../../diagrams/snake_bot_schem.png>
 Package pdftex.def Info: ../../diagrams/snake_bot_schem.png used on input line 
-367.
+395.
 (pdftex.def)             Requested size: 76.8469pt x 151.52573pt.
 
-<../../results/rl_worms/fnn_progress/training_progress.png, id=52, 770.88pt x 5
+<../../results/rl_worms/fnn_progress/training_progress.png, id=54, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/fnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/fnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/fnn_progress/training_progress.
-png used on input line 383.
+png used on input line 405.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
-<../../results/rl_worms/hnn_progress/training_progress.png, id=53, 770.88pt x 5
+<../../results/rl_worms/hnn_progress/training_progress.png, id=55, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/hnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/hnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/hnn_progress/training_progress.
-png used on input line 389.
+png used on input line 411.
 (pdftex.def)             Requested size: 231.26578pt x 173.44933pt.
 
-<../../results/rl_worms/training_progress.png, id=54, 770.88pt x 578.16pt>
+<../../results/rl_worms/training_progress.png, id=56, 770.88pt x 578.16pt>
 File: ../../results/rl_worms/training_progress.png Graphic file (type png)
 
 <use ../../results/rl_worms/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/training_progress.png used on i
-nput line 398.
+nput line 420.
 (pdftex.def)             Requested size: 308.34654pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <../../results/rl_arcade/testing_progress.png> <../../diagrams/worms_rl_game
-_desc.png> <../../diagrams/snake_bot_schem.png (PNG copy)>] [7 <../../results/r
-l_worms/fnn_progress/training_progress.png> <../../results/rl_worms/hnn_progres
-s/training_progress.png> <../../results/rl_worms/training_progress.png>]
+[6 <../../results/rl_arcade/training_progress.png> <../../diagrams/worms_rl_gam
+e_desc.png> <../../diagrams/snake_bot_schem.png (PNG copy)>] [7 <../../results/
+rl_worms/fnn_progress/training_progress.png> <../../results/rl_worms/hnn_progre
+ss/training_progress.png> <../../results/rl_worms/training_progress.png>]
 No file paper.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--418
+Underfull \hbox (badness 10000) in paragraph at lines 452--454
 []\T1/ptm/m/n/10 M.J.Flynn, P.Kanerva, and N.Bhadkamkar, 1989, Sparse Dis-tri-b
 u-ted Me-mory: Prin-cip-les and Ope-ra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 []\T1/ptm/m/n/10 David Ro-gers, 1988, NASA, KA-NERVA'S SPARSE DIS-TRI-BU-TED ME
 -MORY: AN AS-SO-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 \T1/ptm/m/n/10 CIA-TIVE ME-MORY AL-GO-RITHM WELL SU-ITED TO THE CON-NEC-TION MA
 -CHINE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--424
+Underfull \hbox (badness 10000) in paragraph at lines 458--460
 []\T1/ptm/m/n/10 J. S. Al-bus, 1975, Data Sto-rage in Ce-re-bel-lar Mo-del Ar-t
 i-cu-la-tion Con-trol-ler
  []
 
 [8] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 16492 strings out of 493029
- 308132 string characters out of 6136234
- 369973 words of memory out of 5000000
- 19669 multiletter control sequences out of 15000+600000
+ 16497 strings out of 493029
+ 308408 string characters out of 6136234
+ 369981 words of memory out of 5000000
+ 19674 multiletter control sequences out of 15000+600000
  37132 words of font info for 60 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 55i,9n,54p,807b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,54p,807b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
@@ -1258,10 +1268,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb>
-Output written on paper.pdf (8 pages, 909953 bytes).
+Output written on paper.pdf (8 pages, 951611 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
