@@ -1,0 +1,16 @@
+\beamer@slide {eq:weights_training}{8}
+\beamer@slide {img:FNN sparse weights histogram}{10}
+\beamer@slide {img:FNN no sparse weights histogram}{10}
+\beamer@slide {img:AE+FNN sparse weights histogram}{10}
+\beamer@slide {img:AE+FNN no sparse weights histogram}{10}
+\beamer@slide {img:FNN sparse weights visualisation}{11}
+\beamer@slide {img:AE+FNN sparse weights visualisation}{11}
+\beamer@slide {img:FNN progress comparison}{12}
+\beamer@slide {img:AE+FNN progress comparison}{12}
+\beamer@slide {img:FNN score}{12}
+\beamer@slide {img:AE+FNN score}{12}
+\beamer@slide {img:Training progress comparison}{13}
+\beamer@slide {tab:summary_results}{13}
+\beamer@slide {img:worms FNN score progress comparison}{14}
+\beamer@slide {img:worms AE+FNN score progress comparison}{14}
+\beamer@slide {img:Training worms score progress for best networks}{15}
