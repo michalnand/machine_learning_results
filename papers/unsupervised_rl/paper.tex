@@ -155,10 +155,10 @@ Hyperparametre sietí boli experimentálne zvolené tak aby nedochádzalo k
 divergencií váh. Úmerne tomu boli upravené počty iterácií učenia.
 \\
 Veľkosť batch bol zvolený na 1000 po sebe idúcich stavov. Každý batch mal pri tréningu
-10 behov (epoch). Parameter SARSA algoritmu $\gamma$ bol zvolený $0.8$,
+10 behov (epoch). Parameter SARSA algoritmu $\gamma$ bol zvolený $0.95$,
 parameter $\alpha$ je pri použití neurónovej siete ukrytý v learning rate parametry siete.
-Zvolená bola $\epsilon$ greedy stratégia voľby akcií. Voľba horšej akcie bola počas tréningu
-0.1, počas testovania 0.0 - vyberala sa len najlepšia akcia.
+Zvolená bola $\epsilon$ greedy stratégia voľby akcií. Voľba horšej akcie bola počas tréningu mala
+prevdepodobnosť 0.1, počas testovania 0.0 - vyberala sa len najlepšia akcia.
 \\
 Siete boli učené algoritmom backpropagation. Riedkosť váh sa dosahovala pomocou L1 normy.
 Gradientová metóda učenia váh potom prejde na vzťah
@@ -210,12 +210,12 @@ Počas tréningu sa postupne váhy ustália na potrebné hodnoty. Pomocou histog
 je možné overiť riedkosť váh, v závislosti od parametra $\lambda$.
 Pre prehľadnosť sú znázornené len vlastnosti váh pre prvú vrstvu siete.
 Histogramy na obrázkoch \ref{img:FNN sparse weights histogram} a \ref{img:FNN no sparse weights histogram}
-porovnávajú početnosti váh pre doprednú sieť. Pre riedku sieť je 16\% váh nulových,
-pre neriedku 1.67\%.
+porovnávajú početnosti váh pre doprednú sieť. Pre riedku sieť je 16.1\% váh nulových,
+pre neriedku 1.97\%.
 Podobné výsledky sú pre kombináciu autoenkódera a doprednej siete -
 obrázky \ref{img:AE+FNN sparse weights histogram} a \ref{img:AE+FNN no sparse weights histogram}
-S percentuálnym zastúpením 17.7\% pre riedke váhy a 3.3\% pre neriedke váhy.
-Ilustračne ešte uvádzame cahrakter riedkych váh pre každý zo 64 neurónov, usporiadaných
+S percentuálnym zastúpením 2.44\% pre riedke váhy a 17.8\% pre neriedke váhy.
+Ilustračne ešte uvádzame cahrakter riedkych a neriedkych váh pre každý zo 64 neurónov, usporiadaných
 do matice 5x19 - tak aby zodpovedali vizuálnej interpretácií prostredia. Obrázky
 \ref{img:FNN sparse weights visualisation}, \ref{img:AE+FNN sparse weights visualisation}.
 
@@ -258,13 +258,13 @@ do matice 5x19 - tak aby zodpovedali vizuálnej interpretácií prostredia. Obr�
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.4]{../../diagrams/layer_1_fnn_sparse.png}
-  \captionof{figure}{FNN sparse weights visualisation}
+  \includegraphics[scale=1.3]{../../results/rl_arcade/hnn_trained_5/supervised/layer_1.png}
+  \captionof{figure}{AE+FNN no sparse weights visualisation}
   \label{img:FNN sparse weights visualisation}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.4]{../../diagrams/layer_1_hnn_sparse.png}
+  \includegraphics[scale=1.3]{../../results/rl_arcade/hnn_trained_0/supervised/layer_1.png}
   \captionof{figure}{AE+FNN sparse weights visualisation}
   \label{img:AE+FNN sparse weights visualisation}
 \end{minipage}
@@ -280,27 +280,27 @@ Zhrnuté dosiahnuté skóre na konci testovacích iteráciach je uvedené v tabu
 
 \begin{table}[]
 \centering
-\caption{Summary results}
+\caption{Summary results {\bf TODO prepocitat}}
 \label{tab:summary_results}
 \begin{tabular}{|l|c|c|c|c|}
 \hline
                          & \multicolumn{1}{l|}{average score} & \multicolumn{1}{l|}{best score} & \multicolumn{1}{l|}{worst score} & \multicolumn{1}{l|}{average best action probability {[}\%{]}} \\ \hline
-FNN sparse weights       & 960.58                             & 994.97                          & 922.64                           & 95.32                                                         \\ \hline
-FNN nosparse weights     & 945.04                             & 995.64                          & 878.31                           & 93.29                                                         \\ \hline
-AE+FNN sparse weights    & 914.5                              & 947.64                          & 875.31                           & 93.4                                                          \\ \hline
-AE+FNN no sparse weights & 908.58                             & 954.31                          & 780.32                           & 93.12                                                         \\ \hline
+FNN sparse weights       & 957.31                             & 978.3                          & 927.31                           & 94.04                                                       \\ \hline
+FNN nosparse weights     & 951.5                             & 959.3                          & 942.644                           & 95.95                                                   \\ \hline
+AE+FNN sparse weights    & 763.58                             & 942.97                          & 618.66                           & 88.16                                                       \\ \hline
+AE+FNN no sparse weights & 737.78                             & 884.98                          & 618.99                           & 87.19                                                        \\ \hline
 \end{tabular}
 \end{table}
 
 Testovanie hypotézy o rýchlosti učenia zobrazujú grafy na obrázkoch
-\ref{img:FNN progress comparison}, \ref{img:AE+FNN progress comparison}, \ref{img:Training progress comparison}.
+\ref{img:FNN progress comparison}, \ref{img:AE+FNN progress comparison}, \ref{img:Average training progress comparison}.
 Grafy zobrazujú priebehy pre všetkých 10 sieti (5 riedkych a 5 neriedkych).
 Graf na obrázku \ref{img:FNN progress comparison} je pre jednoduchú doprednú sieť,
 a graf na obrázku \ref{img:AE+FNN progress comparison} pre kombinvané riešenie s predtrénovaním.
 
-Pre prehľadnosť sme z každého grafu vybrali 2 siete a vykreslili ich do spoločného grafu,
-na obrázku \ref{img:Training progress comparison} - tento výber je možné urobiť, pretože rozptyly výsledkov sú
-veľmi malé. Z grafu obrázka \ref{img:Training progress comparison} je zrejmé, že predtrénovaná
+Pre prehľadnosť sme z každého grafu vybrali spriemerovali výsledky sieti
+a vykreslili ich do spoločného grafu,
+na obrázku \ref{img:Average training progress comparison}. Z grafu obrázka \ref{img:Average training progress comparison} je zrejmé, že predtrénovaná
 sieť sa učí rýchlejšie - voľbu správnej akcie dosiahne rýchlejšie.
 Po čase podľa očakávania, obe siete dosiahnú rovnaký výsledok. Hypotéza sa teda potvrdila.
 
@@ -354,8 +354,8 @@ podobne.
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.4]{../../results/rl_arcade/training_progress.png}
-  \caption{Training progress comparison}
-  \label{img:Training progress comparison}
+  \caption{Average training progress comparison}
+  \label{img:Average training progress comparison}
 \end{figure}
 
 
@@ -372,7 +372,7 @@ Agent má na výber tri akcie - vpred, vľavo, vpravo. Had je modelovaný ako di
 podvozok {\bf TODO citovat} so zotrvačnosťou. Uvedené akcie teda generujú dve sily, ktoré
 menia polomer zatáčania, tak ako je uvedené na obrázku \ref{img:Agent schematics}.
 Kolízie neboli v experimente použité.
- 
+
 Hyperparametre siete boli rovnaké ako v predošlom experimente.
 Parametre agenta bolo nutné upraviť, pravdepodobnosť voľby horšej akcie $\epsilon = 0.3$,
 veľkosť batch 100 krokov, a počet epoch batchu 10. S týmito parametrami sa bol agent schopný

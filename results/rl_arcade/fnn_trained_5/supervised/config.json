@@ -18,8 +18,8 @@
 	"weights_file" : 
 	[
 		null,
-		"results/fnn_trained_5/supervised/layer_1.bin",
-		"results/fnn_trained_5/supervised/layer_2.bin",
-		"results/fnn_trained_5/supervised/layer_3.bin"
+		"results_sarsa/fnn_trained_5/supervised/layer_1.bin",
+		"results_sarsa/fnn_trained_5/supervised/layer_2.bin",
+		"results_sarsa/fnn_trained_5/supervised/layer_3.bin"
 	]
 }

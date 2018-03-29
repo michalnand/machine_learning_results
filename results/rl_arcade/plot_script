@@ -16,22 +16,23 @@ set terminal png size 1024,768 enhanced font "Helvetica,20"
 set xlabel "iteration x 1000"
 set ylabel "best action probability"
 
-set yrange [0.0:1.0]
+set yrange [0:1.0]
 
 set xtic 20
 
+
+average (v1, v2, v3, v4, v5) = ((v1 + v2 + v3 + v4 + v5)/5.0)
+
 set output 'training_progress.png'
-plot  'hnn_progress/training_0.log' using 5 every ::100 title "AE+FNN - sparse" with lines lw 2.0,\
-      'hnn_progress/training_5.log' using 5 every ::100 title "AE+FNN" with lines lw 2.0,\
-      'fnn_progress/training_0.log' using 5 every ::::200 title "FNN - sparse" with lines lw 2.0,\
-      'fnn_progress/training_5.log' using 5 every ::::200 title "FNN" with lines lw 2.0,\
+plot  "<paste hnn_progress/training_0.log hnn_progress/training_1.log hnn_progress/training_2.log hnn_progress/training_3.log hnn_progress/training_4.log" using (average($5, $10, $15, $20, $25)) every ::100 title "AE+FNN - sparse average" with lines lw 2.0,\
+      "<paste hnn_progress/training_5.log hnn_progress/training_6.log hnn_progress/training_7.log hnn_progress/training_8.log hnn_progress/training_9.log" using (average($5, $10, $15, $20, $25)) every ::100 title "AE+FNN average" with lines lw 2.0,\
+      "<paste fnn_progress/training_0.log fnn_progress/training_1.log fnn_progress/training_2.log fnn_progress/training_3.log fnn_progress/training_4.log" using (average($5, $10, $15, $20, $25)) every ::::200 title "FNN - sparse average" with lines lw 2.0,\
+      "<paste fnn_progress/training_5.log fnn_progress/training_6.log fnn_progress/training_7.log fnn_progress/training_8.log fnn_progress/training_9.log" using (average($5, $10, $15, $20, $25)) every ::::200 title "FNN average" with lines lw 2.0,\
 
 
 
-
-set output 'testing_progress.png'
-plot  'hnn_progress/testing_0.log' using 5 title "AE+FNN - sprase" with lines lw 2.0 ,\
-      'hnn_progress/testing_5.log' using 5 title "AE+FNN" with lines lw 2.0 ,\
-      'fnn_progress/testing_0.log' using 5 title "FNN - sparse" with lines lw 2.0 ,\
-      'fnn_progress/testing_5.log' using 5 title "FNN" with lines lw 2.0,\
-
+      set output 'testing_progress.png'
+      plot  "<paste hnn_progress/testing_0.log hnn_progress/testing_1.log hnn_progress/testing_2.log hnn_progress/testing_3.log hnn_progress/testing_4.log" using (average($5, $10, $15, $20, $25)) title "AE+FNN - sparse average" with lines lw 2.0,\
+            "<paste hnn_progress/testing_5.log hnn_progress/testing_6.log hnn_progress/testing_7.log hnn_progress/testing_8.log hnn_progress/testing_9.log" using (average($5, $10, $15, $20, $25)) title "AE+FNN average" with lines lw 2.0,\
+            "<paste fnn_progress/testing_0.log fnn_progress/testing_1.log fnn_progress/testing_2.log fnn_progress/testing_3.log fnn_progress/testing_4.log" using (average($5, $10, $15, $20, $25)) every ::::200 title "FNN - sparse average" with lines lw 2.0,\
+            "<paste fnn_progress/testing_5.log fnn_progress/testing_6.log fnn_progress/testing_7.log fnn_progress/testing_8.log fnn_progress/testing_9.log" using (average($5, $10, $15, $20, $25)) every ::::200 title "FNN average" with lines lw 2.0,\
