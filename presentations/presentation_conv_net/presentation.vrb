@@ -1,0 +1,31 @@
+\frametitle{\bf Learning weights}
+
+\lstset{language=C++,
+                basicstyle=\tiny,
+                emph={int,char,double,float,unsigned},
+                emphstyle={\color{blue}},
+                numberstyle=\color{green}\tiny,
+                keywordstyle=\color{red}\bf\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}
+}
+
+\begin{lstlisting}
+
+for (unsigned filter = 0; filter < filters_count; filter++)
+for (unsigned y = 0; y <= input_height; y++)
+for (unsigned x = 0; x <= input_width; x++)
+{
+    float err = error[filter][y][x];
+
+    for (unsigned ch = 0; ch < channels_count; ch++)
+    for (unsigned ky = 0; ky < kernel_height; ky++)
+    for (unsigned kx = 0; kx < kernel_width; kx++)
+    {
+        float dif = err*input[ch][y + ky][x + kx];
+        w[filter][ch][ky][kx]+= dif*learning_rate;
+    }
+}
+
+
+\end{lstlisting}
