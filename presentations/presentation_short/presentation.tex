@@ -38,7 +38,7 @@
 \setbeamertemplate{navigation symbols}{}
 
 
-\date[EURP]{\it April 2018}
+\date[EURP]{\it May 2018}
 \begin{document}
 
 \begin{frame}
@@ -71,7 +71,29 @@
 \end{minipage}
 \end{figure}
 
+\end{frame}
 
+
+
+\begin{frame}{\bf Stack game}
+
+\begin{minipage}{.5\textwidth}
+
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[scale=0.18]{../../pictures/stack_game.png}
+    \end{figure}
+
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+
+  \begin{itemize}
+   \item build stack tower
+   \item {\bf state}  : last + actual floor image [20x20x2]
+   \item {\bf reward} : alignment rate $\langle 0, 1 \rangle$
+  \end{itemize}
+
+\end{minipage}
 
 \end{frame}
 
@@ -95,7 +117,8 @@ problems
 \end{frame}
 
 
-\begin{frame}{\bf Neural network approximator - deep reinforcement learning}
+\begin{frame}[fragile]
+{\bf Neural network approximator - deep reinforcement learning}
 
 \begin{figure}[htbp]
   \centering
@@ -105,8 +128,21 @@ problems
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.3]{../../diagrams/fnn.png}
+  \includegraphics[scale=0.2]{../../diagrams/fnn.png}
 \end{figure}
+
+{\tiny
+\begin{verbatim}
+layer IO                   : [  20   20    2][   1    1    1][  20   20    2][    0     0]
+layer AV POOLING           : [  20   20    2][   2    2    1][  10   10    2][    0     0]
+layer FC                   : [   1    1  200][   1    1   64][   1    1   64][12800    64]
+layer RELU                 : [   1    1   64][   1    1    1][   1    1   64][    0     0]
+layer FC                   : [   1    1   64][   1    1    8][   1    1    8][  512     8]
+layer RELU                 : [   1    1    8][   1    1    1][   1    1    8][    0     0]
+layer FC                   : [   1    1    8][   1    1    2][   1    1    2][   16     2]
+layer IO                   : [   1    1    2][   1    1    1][   1    1    2][    0     0]
+\end{verbatim}
+}
 
 \end{frame}
 

@@ -1,32 +1,26 @@
-\frametitle{\bf Making decisions}
+\frametitle{\bf Neural network approximator - deep reinforcement learning}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{../../diagrams/rl_nn_learn.png}
+\end{figure}
 
 
-	\begin{columns}
-		\begin{column}{0.48\textwidth}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.2]{../../diagrams/fnn.png}
+\end{figure}
 
-			\begin{figure}[ht]
-			\hspace*{-4cm}%
-			\includegraphics[width=1.0\textwidth]{../pictures/tree.jpg}
-			\hspace*{-4cm}%
-			\end{figure}
-
-		\end{column}
-		\begin{column}{0.48\textwidth}
-			\begin{verbatim}
-				if (input == INPUT_1)
-					if (input == INPUT_2)
-						...
-					else
-					 if (input == INPUT_47)
-					 	...
-					 else
-					 	if (input == INPUT_123)
-							 ...
-			\end{verbatim}
-
-		\end{column}
-	\end{columns}
-
-
-
+{\tiny
+\begin{verbatim}
+layer IO                   : [  20   20    2][   1    1    1][  20   20    2][    0     0]
+layer AV POOLING           : [  20   20    2][   2    2    1][  10   10    2][    0     0]
+layer FC                   : [   1    1  200][   1    1   64][   1    1   64][12800    64]
+layer RELU                 : [   1    1   64][   1    1    1][   1    1   64][    0     0]
+layer FC                   : [   1    1   64][   1    1    8][   1    1    8][  512     8]
+layer RELU                 : [   1    1    8][   1    1    1][   1    1    8][    0     0]
+layer FC                   : [   1    1    8][   1    1    2][   1    1    2][   16     2]
+layer IO                   : [   1    1    2][   1    1    1][   1    1    2][    0     0]
+\end{verbatim}
+}
 

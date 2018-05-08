@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 APR 2018 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  8 MAY 2018 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1464,26 +1464,26 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 74.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 76.
+LaTeX Font Info:    No file OMScmss.fd. on input line 74.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 76.
+(Font)              for symbol `textbullet' on input line 74.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 76.
+line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1493,7 +1493,7 @@ thkerncmss.
 File: ../../diagrams/rl_mechanism.jpg Graphic file (type jpg)
 
 <use ../../diagrams/rl_mechanism.jpg>
-Package pdftex.def Info: ../../diagrams/rl_mechanism.jpg used on input line 76.
+Package pdftex.def Info: ../../diagrams/rl_mechanism.jpg used on input line 74.
 
 (pdftex.def)             Requested size: 128.47772pt x 92.66455pt.
 
@@ -1502,123 +1502,138 @@ File: ../../diagrams/worms_rl_game_desc.png Graphic file (type png)
 
 <use ../../diagrams/worms_rl_game_desc.png>
 Package pdftex.def Info: ../../diagrams/worms_rl_game_desc.png used on input li
-ne 76.
+ne 74.
 (pdftex.def)             Requested size: 119.82153pt x 126.54253pt.
  [2
 
- <../../diagrams/rl_mechanism.jpg> <../../diagrams/worms_rl_game_desc.png>] [3
+ <../../diagrams/rl_mechanism.jpg> <../../diagrams/worms_rl_game_desc.png>]
+<../../pictures/stack_game.png, id=46, 803.0pt x 630.355pt>
+File: ../../pictures/stack_game.png Graphic file (type png)
+
+<use ../../pictures/stack_game.png>
+Package pdftex.def Info: ../../pictures/stack_game.png used on input line 98.
+(pdftex.def)             Requested size: 144.53375pt x 113.459pt.
+ [3
+
+ <../../pictures/stack_game.png>]
+[4
 
 ]
-<../../diagrams/rl_nn_learn.png, id=52, 892.17316pt x 248.97015pt>
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
+<../../diagrams/rl_nn_learn.png, id=60, 892.17316pt x 248.97015pt>
 File: ../../diagrams/rl_nn_learn.png Graphic file (type png)
 
 <use ../../diagrams/rl_nn_learn.png>
-Package pdftex.def Info: ../../diagrams/rl_nn_learn.png used on input line 111.
-
+Package pdftex.def Info: ../../diagrams/rl_nn_learn.png used on input line 5.
 (pdftex.def)             Requested size: 267.654pt x 74.69162pt.
 
-<../../diagrams/fnn.png, id=53, 710.59477pt x 280.04625pt>
+<../../diagrams/fnn.png, id=61, 710.59477pt x 280.04625pt>
 File: ../../diagrams/fnn.png Graphic file (type png)
 
 <use ../../diagrams/fnn.png>
-Package pdftex.def Info: ../../diagrams/fnn.png used on input line 111.
-(pdftex.def)             Requested size: 213.18007pt x 84.01451pt.
- [4
+Package pdftex.def Info: ../../diagrams/fnn.png used on input line 11.
+(pdftex.def)             Requested size: 142.11642pt x 56.00824pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
+Overfull \vbox (3.5985pt too high) detected at line 147
+ []
+
+[5
 
  <../../diagrams/rl_nn_learn.png (PNG copy)> <../../diagrams/fnn.png (PNG copy)
 >]
 File: ../../diagrams/fnn.png Graphic file (type png)
  <use ../../diagrams/fnn.png>
-Package pdftex.def Info: ../../diagrams/fnn.png used on input line 129.
+Package pdftex.def Info: ../../diagrams/fnn.png used on input line 165.
 (pdftex.def)             Requested size: 149.2293pt x 58.81143pt.
 
-<../../diagrams/hnn.png, id=60, 938.42595pt x 459.6372pt>
+<../../diagrams/hnn.png, id=69, 938.42595pt x 459.6372pt>
 File: ../../diagrams/hnn.png Graphic file (type png)
 
 <use ../../diagrams/hnn.png>
-Package pdftex.def Info: ../../diagrams/hnn.png used on input line 129.
+Package pdftex.def Info: ../../diagrams/hnn.png used on input line 165.
 (pdftex.def)             Requested size: 197.07526pt x 96.52666pt.
- [5
+ [6
 
  <../../diagrams/hnn.png (PNG copy)>]
-<../../diagrams/arcade_rl_game_desc.png, id=68, 594.7821pt x 628.0263pt>
+<../../diagrams/arcade_rl_game_desc.png, id=77, 594.7821pt x 628.0263pt>
 File: ../../diagrams/arcade_rl_game_desc.png Graphic file (type png)
 
 <use ../../diagrams/arcade_rl_game_desc.png>
 Package pdftex.def Info: ../../diagrams/arcade_rl_game_desc.png used on input l
-ine 159.
+ine 195.
 (pdftex.def)             Requested size: 124.90793pt x 131.8894pt.
 
-Overfull \hbox (3.86726pt too wide) in paragraph at lines 159--159
+Overfull \hbox (3.86726pt too wide) in paragraph at lines 195--195
  [] 
  []
 
-[6
+[7
 
  <../../diagrams/arcade_rl_game_desc.png>]
-<../../results/rl_arcade/training_progress.png, id=76, 770.88pt x 578.16pt>
+<../../results/rl_arcade/training_progress.png, id=86, 770.88pt x 578.16pt>
 File: ../../results/rl_arcade/training_progress.png Graphic file (type png)
 
 <use ../../results/rl_arcade/training_progress.png>
 Package pdftex.def Info: ../../results/rl_arcade/training_progress.png used on 
-input line 190.
+input line 226.
 (pdftex.def)             Requested size: 192.71953pt x 144.53964pt.
 
-Overfull \hbox (38.52678pt too wide) in paragraph at lines 190--190
+Overfull \hbox (38.52678pt too wide) in paragraph at lines 226--226
  [] 
  []
 
 
-Overfull \vbox (6.50523pt too high) detected at line 190
+Overfull \vbox (6.50523pt too high) detected at line 226
  []
 
-[7
+[8
 
  <../../results/rl_arcade/training_progress.png>]
 File: ../../diagrams/worms_rl_game_desc.png Graphic file (type png)
 
 <use ../../diagrams/worms_rl_game_desc.png>
 Package pdftex.def Info: ../../diagrams/worms_rl_game_desc.png used on input li
-ne 227.
+ne 263.
 (pdftex.def)             Requested size: 89.86386pt x 94.90448pt.
 
-<../../results/rl_worms/fnn_progress/training_progress.png, id=87, 770.88pt x 5
+<../../results/rl_worms/fnn_progress/training_progress.png, id=96, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/fnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/fnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/fnn_progress/training_progress.
-png used on input line 227.
+png used on input line 263.
 (pdftex.def)             Requested size: 131.04787pt x 98.28589pt.
 
-<../../results/rl_worms/hnn_progress/training_progress.png, id=88, 770.88pt x 5
+<../../results/rl_worms/hnn_progress/training_progress.png, id=97, 770.88pt x 5
 78.16pt>
 File: ../../results/rl_worms/hnn_progress/training_progress.png Graphic file (t
 ype png)
  <use ../../results/rl_worms/hnn_progress/training_progress.png>
 Package pdftex.def Info: ../../results/rl_worms/hnn_progress/training_progress.
-png used on input line 227.
+png used on input line 263.
 (pdftex.def)             Requested size: 131.04787pt x 98.28589pt.
 
-Overfull \vbox (10.756pt too high) detected at line 227
+Overfull \vbox (10.756pt too high) detected at line 263
  []
 
-[8
+[9
 
  <../../results/rl_worms/fnn_progress/training_progress.png> <../../results/rl_
 worms/hnn_progress/training_progress.png>]
-<../../pictures/me3.jpg, id=99, 1463.4675pt x 2601.72pt>
+<../../pictures/me3.jpg, id=108, 1463.4675pt x 2601.72pt>
 File: ../../pictures/me3.jpg Graphic file (type jpg)
 
 <use ../../pictures/me3.jpg>
-Package pdftex.def Info: ../../pictures/me3.jpg used on input line 249.
+Package pdftex.def Info: ../../pictures/me3.jpg used on input line 285.
 (pdftex.def)             Requested size: 86.04298pt x 152.96024pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 249.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [9
+ [10
 
  <../../pictures/me3.jpg>]
 \tf@nav=\write6
@@ -1630,14 +1645,13 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1645,14 +1659,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 22713 strings out of 493029
- 413018 string characters out of 6136234
- 614698 words of memory out of 5000000
- 25679 multiletter control sequences out of 15000+600000
- 19195 words of font info for 52 fonts, out of 8000000 for 9000
+ 22728 strings out of 493029
+ 413279 string characters out of 6136234
+ 616696 words of memory out of 5000000
+ 25687 multiletter control sequences out of 15000+600000
+ 19508 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,79p,416b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1665,11 +1679,12 @@ usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (9 pages, 1266604 bytes).
+/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1095.pfb>
+Output written on presentation.pdf (10 pages, 1308387 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
